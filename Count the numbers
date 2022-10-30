@@ -1,0 +1,31 @@
+#include<studio.h>
+
+Int main()
+
+{
+
+Int i , n , count = 0;
+
+Printf("enter a number");
+
+Scanf("%d", &n);
+
+While(n > 0)
+
+{
+
+i = n % 10;
+
+Printf("%d",i);
+
+n = n/10;
+
+Count++;
+
+}
+
+Printf("\n %d",count);
+
+return 0;
+
+}
