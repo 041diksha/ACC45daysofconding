@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+void main()
+
+{
+
+    int a,b,k,largest =1,lcm;
+
+    printf("enter two numbers");
+
+    scanf("%d %d",&a,&b);
+
+    if(a<b)
+
+{
+
+        k=a;
+
+    } 
+
+else
+
+{
+
+        k=b;
+
+}
+
+for( int i=1;i<=k;i++){
+
+    if(a%i==0&&b%i==0){
+
+        if(i>largest){
+
+            largest;
+
+        }
+
+    }
+
+} lcm= (a*b)/largest;
+
+printf("lcm : %d  Hcf:%d",lcm,largest);
+
+}
