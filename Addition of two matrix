@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+  //  Addition of two matrix
+    
+    int a[25][25],b[25][25],ro,co,i,j,sum[25][25];
+    printf("Enter the no of rows in an array \n");
+    scanf("%d",&ro);
+    
+    printf("Enter the number of columns in the array\n");
+    scanf("%d",&co);
+    
+    printf("Enter the elements of first matrix\n");
+    
+    for(i=0; i<ro; i++){
+        for(j=0; j<co; j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter the elements of second matrix\n");
+    for(i=0; i<ro; i++){
+        for(j=0; j<co; j++){
+            scanf("%d",&b[i][j]);
+        }
+    }
+    for(i=0; i<ro; i++){
+        for(j=0; j<co; j++){
+            sum[i][j]=a[i][j]+b[i][j];
+        }
+    }
+    printf("After the addition resultant array is \n");
+    for(i=0; i<ro; i++){
+        for(j=0; j<co; j++){
+            printf("%d\t",sum[i][j]);
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
