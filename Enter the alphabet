@@ -1,0 +1,29 @@
+
+
+#include<stdio.h>
+
+int main()
+
+{
+
+int i;
+
+char *ptr,ch[26];
+
+ch[0] = 'A';
+
+ptr = &ch[0];
+
+printf(" The Alphabets are : \n");
+
+    for(i=0;i<26;i++)
+
+    {
+
+       printf(" %c ", *ptr+i);
+
+    }
+
+return 0;
+
+}
