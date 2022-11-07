@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+#define MAX 100
+
+void main()
+
+{
+
+int i,j,m,n,matr[MAX][MAX];
+
+printf("\n Enter the size of Matrix (m,n):");
+
+scanf("%d %d",&m,&n);
+
+for(i=0;i<m;i++)
+
+{
+
+for(j=0;j<n;j++)
+
+{
+
+printf("Enter the value of Matrix [%d][%d] : ",i+1,j+1);
+
+scanf("%d",&matr[i][j]);
+
+}
+
+}
+
+printf("The values of Matrix[%d][%d] : ",m,n);
+
+   for(i=0;i<m;i++)
+
+   {
+
+       for(j=0;j<n;j++)
+
+       {
+
+           printf("%d ",matr[i][j]);
+
+       }
+
+              printf("\n");
+
+   }
+
+}
