@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int swap(int,int);
+
+void main()
+
+{
+
+int a,b;
+
+scanf("%d %d",&a,&b);
+
+swap(a,b);
+
+}
+
+int swap(int i,int j)
+
+{
+
+i=i+j;
+
+j=i-j;
+
+i=i-j;
+
+printf("%d %d",i,j);
+
+}
