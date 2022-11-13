@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void add(int,int);
+
+void (*add_ptr)(int,int);
+
+int main()
+
+{
+
+    void (*add_ptr)(int,int) = &add;
+
+   (*add_ptr)(10,20);
+
+    return 0;
+
+}
+
+void add(int a,int b)
+
+{
+
+    printf("Value of sum is %d\n", a+b);
+
+}
