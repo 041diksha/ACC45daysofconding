@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+    int n ,i,a[50],sum=0,r;
+
+    printf("enter the size of array\n");
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++){
+
+        scanf("%d",&a[i]);
+
+    }
+
+    for(i=0;i<n;i++){
+
+        sum+=a[i];
+
+    }
+
+    printf("  %d is sum \n",sum);
+
+
+    printf("remanider is");
+
+    for(i=0;i<n;i++);
+
+    r=sum%a[i];
+
+    printf("%d\t",r);
+
+}
