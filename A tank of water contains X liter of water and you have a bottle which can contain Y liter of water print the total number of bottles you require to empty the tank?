@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+    int x,y,i;
+
+    printf("enter a litre of water in the tank \n");
+
+    scanf("%d",&x);
+
+
+printf("enter a litre of water in the bottel \n");
+
+    scanf("%d",&y);
+
+i = x/y;
+
+printf("enter the total number of bottel you require to empty tank \n");
+
+    
+    if(x%y==0){
+
+        printf("%d",i);
+
+        
+    }
+
+    else{
+
+        printf("%d",i+1);
+
+    }
+
+}
