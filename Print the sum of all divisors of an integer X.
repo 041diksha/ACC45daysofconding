@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+    int i,x,s=0;
+
+printf("enter the value of x \n");
+
+scanf("%d",&x);
+
+for(i=1;i<=x;i++){
+
+if(x%i==0){
+
+s=s+i;
+
+    }
+
+}
+
+printf("%d",s);
+
+}
