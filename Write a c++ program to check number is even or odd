@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class A{
+	public:
+		int a;
+		void sum(){
+		cout<<"enter the number you want :"<<endl;
+		cin>>a;
+       if(a%2==0){
+       	cout<<"number is prime "<<endl;
+	   }else{
+	   	cout<<"number is odd"<<endl;
+	   }
+}
+};
+int main(){
+	A a;
+	a.sum();
+}
